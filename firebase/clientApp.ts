@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDCXK1iOoG3UgQ8mQk2XrpRP71cWyGwza0",
-    authDomain: "partner-petualang.firebaseapp.com",
-    projectId: "partner-petualang",
-    storageBucket: "partner-petualang.appspot.com",
-    messagingSenderId: "206016083537",
-    appId: "1:206016083537:web:04e93c17813e91d0d92a70",
-    measurementId: "G-1T0E2PNTK1"
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 initializeApp(firebaseConfig);
